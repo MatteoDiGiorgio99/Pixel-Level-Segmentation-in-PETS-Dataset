@@ -1,0 +1,279 @@
+Train dataset size: 3680
+Test dataset size: 3669
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 256, 256]           1,792
+         LeakyReLU-2         [-1, 64, 256, 256]               0
+            Conv2d-3         [-1, 64, 256, 256]          36,928
+       BatchNorm2d-4         [-1, 64, 256, 256]             128
+         LeakyReLU-5         [-1, 64, 256, 256]               0
+         MaxPool2d-6         [-1, 64, 128, 128]               0
+            Conv2d-7        [-1, 128, 128, 128]          73,856
+         LeakyReLU-8        [-1, 128, 128, 128]               0
+            Conv2d-9        [-1, 128, 128, 128]         147,584
+      BatchNorm2d-10        [-1, 128, 128, 128]             256
+        LeakyReLU-11        [-1, 128, 128, 128]               0
+        MaxPool2d-12          [-1, 128, 64, 64]               0
+           Conv2d-13          [-1, 256, 64, 64]         295,168
+        LeakyReLU-14          [-1, 256, 64, 64]               0
+           Conv2d-15          [-1, 256, 64, 64]         590,080
+      BatchNorm2d-16          [-1, 256, 64, 64]             512
+        LeakyReLU-17          [-1, 256, 64, 64]               0
+        MaxPool2d-18          [-1, 256, 32, 32]               0
+           Conv2d-19          [-1, 512, 32, 32]       1,180,160
+        LeakyReLU-20          [-1, 512, 32, 32]               0
+           Conv2d-21          [-1, 512, 32, 32]       2,359,808
+      BatchNorm2d-22          [-1, 512, 32, 32]           1,024
+        LeakyReLU-23          [-1, 512, 32, 32]               0
+        MaxPool2d-24          [-1, 512, 16, 16]               0
+           Conv2d-25         [-1, 1024, 16, 16]       4,719,616
+        LeakyReLU-26         [-1, 1024, 16, 16]               0
+           Conv2d-27         [-1, 1024, 16, 16]       9,438,208
+      BatchNorm2d-28         [-1, 1024, 16, 16]           2,048
+        LeakyReLU-29         [-1, 1024, 16, 16]               0
+  ConvTranspose2d-30          [-1, 512, 32, 32]       2,097,664
+           Conv2d-31          [-1, 512, 32, 32]       4,719,104
+        LeakyReLU-32          [-1, 512, 32, 32]               0
+           Conv2d-33          [-1, 512, 32, 32]       2,359,808
+      BatchNorm2d-34          [-1, 512, 32, 32]           1,024
+        LeakyReLU-35          [-1, 512, 32, 32]               0
+  ConvTranspose2d-36          [-1, 256, 64, 64]         524,544
+           Conv2d-37          [-1, 256, 64, 64]       1,179,904
+        LeakyReLU-38          [-1, 256, 64, 64]               0
+           Conv2d-39          [-1, 256, 64, 64]         590,080
+      BatchNorm2d-40          [-1, 256, 64, 64]             512
+        LeakyReLU-41          [-1, 256, 64, 64]               0
+  ConvTranspose2d-42        [-1, 128, 128, 128]         131,200
+           Conv2d-43        [-1, 128, 128, 128]         295,040
+        LeakyReLU-44        [-1, 128, 128, 128]               0
+           Conv2d-45        [-1, 128, 128, 128]         147,584
+      BatchNorm2d-46        [-1, 128, 128, 128]             256
+        LeakyReLU-47        [-1, 128, 128, 128]               0
+  ConvTranspose2d-48         [-1, 64, 256, 256]          32,832
+           Conv2d-49         [-1, 64, 256, 256]          73,792
+        LeakyReLU-50         [-1, 64, 256, 256]               0
+           Conv2d-51         [-1, 64, 256, 256]          36,928
+      BatchNorm2d-52         [-1, 64, 256, 256]             128
+        LeakyReLU-53         [-1, 64, 256, 256]               0
+           Conv2d-54          [-1, 3, 256, 256]             195
+          Softmax-55          [-1, 3, 256, 256]               0
+================================================================
+Total params: 31,037,763
+Trainable params: 31,037,763
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.75
+Forward/backward pass size (MB): 688.00
+Params size (MB): 118.40
+Estimated Total Size (MB): 807.15
+----------------------------------------------------------------
+Starting training...
+Epoch: 01, Learning Rate: 0.0001
+Train Loss: 0.5521
+Test Loss: 0.3999
+Pixel Accuracy: 0.8034
+IoU: 0.6711
+L1 Distance: 0.1371
+---------------------------------
+Epoch: 02, Learning Rate: 0.0001
+Train Loss: 0.3777
+Test Loss: 0.3847
+Pixel Accuracy: 0.8027
+IoU: 0.6816
+L1 Distance: 0.1334
+---------------------------------
+Epoch: 03, Learning Rate: 0.0001
+Train Loss: 0.3416
+Test Loss: 0.3838
+Pixel Accuracy: 0.8017
+IoU: 0.6821
+L1 Distance: 0.1333
+---------------------------------
+Epoch: 04, Learning Rate: 0.0001
+Train Loss: 0.3127
+Test Loss: 0.3055
+Pixel Accuracy: 0.8431
+IoU: 0.7373
+L1 Distance: 0.1053
+---------------------------------
+Epoch: 05, Learning Rate: 0.0001
+Train Loss: 0.3024
+Test Loss: 0.2770
+Pixel Accuracy: 0.8568
+IoU: 0.7585
+L1 Distance: 0.0961
+---------------------------------
+Epoch: 06, Learning Rate: 0.0001
+Train Loss: 0.2862
+Test Loss: 0.2754
+Pixel Accuracy: 0.8569
+IoU: 0.7600
+L1 Distance: 0.0957
+---------------------------------
+Epoch: 07, Learning Rate: 0.0001
+Train Loss: 0.2774
+Test Loss: 0.2532
+Pixel Accuracy: 0.8687
+IoU: 0.7768
+L1 Distance: 0.0878
+---------------------------------
+Epoch: 08, Learning Rate: 0.0001
+Train Loss: 0.2662
+Test Loss: 0.2538
+Pixel Accuracy: 0.8680
+IoU: 0.7764
+L1 Distance: 0.0882
+---------------------------------
+Epochs without improvement: 1
+Epoch: 09, Learning Rate: 0.0001
+Train Loss: 0.2598
+Test Loss: 0.3029
+Pixel Accuracy: 0.8409
+IoU: 0.7394
+L1 Distance: 0.1063
+---------------------------------
+Epochs without improvement: 2
+Epoch: 10, Learning Rate: 0.0001
+Train Loss: 0.2531
+Test Loss: 0.2499
+Pixel Accuracy: 0.8699
+IoU: 0.7794
+L1 Distance: 0.0869
+---------------------------------
+Epoch: 11, Learning Rate: 1e-05
+Train Loss: 0.2234
+Test Loss: 0.2127
+Pixel Accuracy: 0.8897
+IoU: 0.8088
+L1 Distance: 0.0737
+---------------------------------
+Epoch: 12, Learning Rate: 1e-05
+Train Loss: 0.2141
+Test Loss: 0.2104
+Pixel Accuracy: 0.8910
+IoU: 0.8107
+L1 Distance: 0.0729
+---------------------------------
+Epoch: 13, Learning Rate: 1e-05
+Train Loss: 0.2098
+Test Loss: 0.2101
+Pixel Accuracy: 0.8912
+IoU: 0.8109
+L1 Distance: 0.0728
+---------------------------------
+Epoch: 14, Learning Rate: 1e-05
+Train Loss: 0.2065
+Test Loss: 0.2088
+Pixel Accuracy: 0.8918
+IoU: 0.8119
+L1 Distance: 0.0723
+---------------------------------
+Epoch: 15, Learning Rate: 1e-05
+Train Loss: 0.2024
+Test Loss: 0.2058
+Pixel Accuracy: 0.8934
+IoU: 0.8144
+L1 Distance: 0.0713
+---------------------------------
+Epoch: 16, Learning Rate: 1e-05
+Train Loss: 0.2003
+Test Loss: 0.2044
+Pixel Accuracy: 0.8941
+IoU: 0.8155
+L1 Distance: 0.0708
+---------------------------------
+Epoch: 17, Learning Rate: 1e-05
+Train Loss: 0.1986
+Test Loss: 0.2041
+Pixel Accuracy: 0.8942
+IoU: 0.8157
+L1 Distance: 0.0707
+---------------------------------
+Epoch: 18, Learning Rate: 1e-05
+Train Loss: 0.1954
+Test Loss: 0.2062
+Pixel Accuracy: 0.8929
+IoU: 0.8141
+L1 Distance: 0.0716
+---------------------------------
+Epochs without improvement: 1
+Epoch: 19, Learning Rate: 1e-05
+Train Loss: 0.1933
+Test Loss: 0.2038
+Pixel Accuracy: 0.8943
+IoU: 0.8160
+L1 Distance: 0.0706
+---------------------------------
+Epoch: 20, Learning Rate: 1e-05
+Train Loss: 0.1924
+Test Loss: 0.2009
+Pixel Accuracy: 0.8957
+IoU: 0.8183
+L1 Distance: 0.0697
+---------------------------------
+Epoch: 21, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1883
+Test Loss: 0.2011
+Pixel Accuracy: 0.8959
+IoU: 0.8182
+L1 Distance: 0.0696
+---------------------------------
+Epochs without improvement: 1
+Epoch: 22, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1867
+Test Loss: 0.2003
+Pixel Accuracy: 0.8960
+IoU: 0.8188
+L1 Distance: 0.0695
+---------------------------------
+Epoch: 23, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1882
+Test Loss: 0.1990
+Pixel Accuracy: 0.8969
+IoU: 0.8199
+L1 Distance: 0.0690
+---------------------------------
+Epoch: 24, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1869
+Test Loss: 0.2006
+Pixel Accuracy: 0.8960
+IoU: 0.8186
+L1 Distance: 0.0695
+---------------------------------
+Epochs without improvement: 1
+Epoch: 25, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1864
+Test Loss: 0.1969
+Pixel Accuracy: 0.8980
+IoU: 0.8216
+L1 Distance: 0.0682
+---------------------------------
+Epoch: 26, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1860
+Test Loss: 0.1981
+Pixel Accuracy: 0.8974
+IoU: 0.8207
+L1 Distance: 0.0686
+---------------------------------
+Epochs without improvement: 1
+Epoch: 27, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1859
+Test Loss: 0.1986
+Pixel Accuracy: 0.8971
+IoU: 0.8202
+L1 Distance: 0.0688
+---------------------------------
+Epochs without improvement: 2
+Epoch: 28, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1849
+Test Loss: 0.1991
+Pixel Accuracy: 0.8968
+IoU: 0.8198
+L1 Distance: 0.0690
+---------------------------------
+Epochs without improvement: 3
+Early stopping!
+Saving history...
+Saving metrics...
+Training complete!
