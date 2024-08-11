@@ -100,6 +100,18 @@ Training logs and model checkpoints will be saved in the specified directory.
 To view the results obtained from the various model studies, please refer to `ResultsPaper.ipynb`
 Graphs can be viewed via the **TensorBoard** function in the notebook
 
+In the `runs` folder, all studies carried out with:
+
+- Version of the code related to the study (.py)
+
+- Output obtained (.O)
+
+- Script for job submission (.sh)
+
+- History Training (.pickle)
+
+- Training Process Images
+
 ## Run with HPC
 
 You can use the corresponding scripts for execution with HPC
