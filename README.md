@@ -34,6 +34,16 @@ The goal of this project is to develop a deep learning model capable of performi
 
 The dataset used in this project is the [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), which provides segmentation masks for a large variety of pets. Ensure you download and prepare the dataset correctly before training the model.
 
+### Importing project
+
+**Clone the repository:**
+
+```bash
+
+git clone https://github.com/MatteoDiGiorgio99/Pixel-Level-Segmentation-in-PETS-Dataset
+
+```
+
 ## Installation
 
 ### Prerequisites
@@ -56,18 +66,8 @@ pip  install  -r  requirements.txt
 
 ```
 
-_Note:_ Ensure you have installed necessary libraries like `torch`, `numpy`, and others commonly used in deep learning projects.
+_Note:_ Ensure you have installed necessary libraries like `torch`, `numpy`...
 If necessary, update versions and dependencies.
-
-### Importing project
-
-**Clone the repository:**
-
-```bash
-
-git clone https://github.com/MatteoDiGiorgio99/Pixel-Level-Segmentation-in-PETS-Dataset
-
-```
 
 ## Project Structure
 
@@ -111,6 +111,8 @@ In the `runs` folder, all studies carried out with:
 - History Training (.pickle)
 
 - Training Process Images
+
+**You can make use of the already trained models of the various versions of the code via the following OneDrive link**
 
 ## Run with HPC
 
