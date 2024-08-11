@@ -1,37 +1,49 @@
-
 # PETS Dataset Segmentation using UNet
 
-This repository contains an implementation of a segmentation model aimed at performing pixel-level segmentation on the PETS dataset, which contains images of pets along with their corresponding segmentation masks.
+**Author:** Matteo Di Giorgio - 353719
+
+This repository contains an implementation of a segmentation model aimed at performing pixel-level segmentation on the Oxford-IIIT Pet Dataset, which contains images of pets along with their corresponding segmentation masks.
 
 ## Table of Contents
 
 - [Project Objective](#project-objective)
+
 - [Dataset](#dataset)
+
 - [Installation](#installation)
-- [Usage](#usage)
+
 - [Project Structure](#project-structure)
+
 - [Training](#training)
-- [Evaluation](#evaluation)
-- [Contributing](#contributing)
-- [License](#license)
+
+- [Studies](#studies)
+
+- [Run with HPC](#run-with-hpc)
 
 ## Project Objective
 
 The goal of this project is to develop a deep learning model capable of performing pixel-level segmentation on the PETS dataset. The main objectives are:
+
 - Segmentation of pets from RGB images.
+
 - The network should output a segmentation mask for each pet.
+
 - Only a single pet is present in each image.
 
 ## Dataset
 
-The dataset used in this project is the [PETS dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), which provides segmentation masks for a large variety of pets. Ensure you download and prepare the dataset correctly before training the model.
+The dataset used in this project is the [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), which provides segmentation masks for a large variety of pets. Ensure you download and prepare the dataset correctly before training the model.
 
 ## Installation
 
 ### Prerequisites
 
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
 Make sure you have the following installed on your system:
+
 - Python 3.8 or higher
+
 - pip (Python package installer)
 
 ### Dependencies
@@ -39,50 +51,38 @@ Make sure you have the following installed on your system:
 Install the necessary dependencies using `pip`:
 
 ```bash
-pip install -r requirements.txt
+
+pip  install  -r  requirements.txt
+
 ```
 
-*Note:* If `requirements.txt` is not provided, ensure you have installed necessary libraries like `torch`, `numpy`, and others commonly used in deep learning projects.
+_Note:_ Ensure you have installed necessary libraries like `torch`, `numpy`, and others commonly used in deep learning projects.
+If necessary, update versions and dependencies.
 
-## Usage
+### Importing project
 
-### Running the Segmentation Model
+**Clone the repository:**
 
-1. **Clone the repository:**
+```bash
 
-   ```bash
-   git clone https://github.com/yourusername/unet-pets-segmentation.git
-   cd unet-pets-segmentation
-   ```
+git clone https://github.com/MatteoDiGiorgio99/Pixel-Level-Segmentation-in-PETS-Dataset
 
-2. **Prepare your dataset:**
-
-   Download the PETS dataset and organize it as per the expected format. Refer to `Dataset.py` for details on how the data should be structured.
-
-3. **Train the model:**
-
-   To start training the segmentation model, run:
-
-   ```bash
-   python mainUnet.py --train --config path_to_config_file
-   ```
-
-4. **Evaluate the model:**
-
-   After training, you can evaluate the model by running:
-
-   ```bash
-   python mainUnet.py --evaluate --model path_to_trained_model
-   ```
+```
 
 ## Project Structure
 
-- `Config.py`: Contains configuration parameters for the model, training, and evaluation.
+- `Config.py`: Contains configuration parameters for the training.
+
 - `Dataset.py`: Handles loading and preprocessing of the PETS dataset.
+
 - `mainUnet.py`: The main entry point for training and evaluating the segmentation model.
+
 - `MetricLoss.py`: Implements custom loss functions and metrics such as Intersection over Union (IoU) and L1 distance.
-- `Model.py`: Defines the architecture of the UNet model. You can experiment with different architectures here.
+
+- `Model.py`: Defines the architecture of the UNet model.
+
 - `Train.py`: Manages the training loop and model optimization.
+
 - `Utils.py`: Includes utility functions used across the project.
 
 ## Training
@@ -90,19 +90,38 @@ pip install -r requirements.txt
 To train the segmentation model:
 
 1. Configure your parameters in `Config.py`.
-2. Ensure your data is correctly preprocessed and structured as per the PETS dataset requirements.
-3. Run the training script as mentioned in the usage section.
+2. Run the training script --> run `mainUnet.py`
+3. Evaluate the results with `Evaluate.ipynb`
 
 Training logs and model checkpoints will be saved in the specified directory.
 
-## Evaluation
+## Studies
 
-To evaluate the performance of the trained model, use the evaluation script provided. The model's performance will be assessed using metrics such as Intersection over Union (IoU) and L1 distance.
+To view the results obtained from the various model studies, please refer to `ResultsPaper.ipynb`
+Graphs can be viewed via the **TensorBoard** function in the notebook
 
-## Contributing
+## Run with HPC
 
-Contributions are welcome! Please fork this repository and submit a pull request with your changes.
+You can use the corresponding scripts for execution with HPC
 
-## License
+Example:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+1. **Login HPC** (Password access is allowed only within the University network (160.78.0.0/16). Outside this context it is necessary to use the University [VPN](https://wiki.asi.unipr.it/dokuwiki/doku.php?id=guide_utente:internet:guida_vpn "https://wiki.asi.unipr.it/dokuwiki/doku.php?id=guide_utente:internet:guida_vpn").
+
+```bash
+ssh name.surname@login.hpc.unipr.it
+```
+
+2. **Upload the project** to your profile in a folder of your choice
+
+3. **Go to Folder**
+
+```bash
+cd folder
+```
+
+4. **Job Submission**
+
+```bash
+sbatch mainUnet.sh
+```
