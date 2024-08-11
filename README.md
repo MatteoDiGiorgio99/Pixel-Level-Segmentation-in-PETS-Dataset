@@ -112,7 +112,7 @@ In the `runs` folder, all studies carried out with:
 
 - Training Process Images
 
-**You can make use of the already trained models of the various versions of the code via the following OneDrive link**
+**You can make use of the already trained models of the various versions of the code via the following [OneDrive](https://univpr-my.sharepoint.com/:f:/g/personal/matteo_digiorgio_studenti_unipr_it/EueF_oNikpBMtJ_GdgwCFBQBjD6_5OOfCmVzY04BWcnSLQ?e=gRdeHm) link**
 
 ## Run with HPC
 
