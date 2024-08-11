@@ -71,6 +71,8 @@ If necessary, update versions and dependencies.
 
 ## Project Structure
 
+### Project
+
 - `Config.py`: Contains configuration parameters for the training.
 
 - `Dataset.py`: Handles loading and preprocessing of the PETS dataset.
@@ -84,6 +86,12 @@ If necessary, update versions and dependencies.
 - `Train.py`: Manages the training loop and model optimization.
 
 - `Utils.py`: Includes utility functions used across the project.
+
+### Notebooks
+
+- `Evaluate.py`: Used to display training and model performance.
+
+- `ResultsPaper.py`: Notebook containing the studies carried out and their results.
 
 ## Training
 
