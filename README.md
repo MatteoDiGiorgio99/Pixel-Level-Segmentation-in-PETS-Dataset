@@ -30,10 +30,6 @@ The goal of this project is to develop a deep learning model capable of performi
 
 - Only a single pet is present in each image.
 
-## Dataset
-
-The dataset used in this project is the [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), which provides segmentation masks for a large variety of pets. Ensure you download and prepare the dataset correctly before training the model.
-
 ### Importing project
 
 **Clone the repository:**
@@ -43,6 +39,10 @@ The dataset used in this project is the [Oxford-IIIT Pet Dataset](https://www.ro
 git clone https://github.com/MatteoDiGiorgio99/Pixel-Level-Segmentation-in-PETS-Dataset
 
 ```
+
+## Dataset
+
+The dataset used in this project is the [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), which provides segmentation masks for a large variety of pets. Ensure you download and prepare the dataset correctly before training the model.
 
 ## Installation
 
