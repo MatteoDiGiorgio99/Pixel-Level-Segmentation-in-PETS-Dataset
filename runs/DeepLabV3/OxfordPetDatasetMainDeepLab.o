@@ -1,0 +1,183 @@
+Train dataset size: 3680
+Test dataset size: 3669
+Starting training...
+Epoch: 01, Learning Rate: 0.0001
+Train Loss: 0.3582
+Test Loss: 0.2768
+Pixel Accuracy: 0.8709
+IoU: 0.7586
+L1 Distance: 0.0949
+---------------------------------
+Epoch: 02, Learning Rate: 0.0001
+Train Loss: 0.2483
+Test Loss: 0.2374
+Pixel Accuracy: 0.8847
+IoU: 0.7891
+L1 Distance: 0.0815
+---------------------------------
+Epoch: 03, Learning Rate: 0.0001
+Train Loss: 0.2299
+Test Loss: 0.2138
+Pixel Accuracy: 0.8954
+IoU: 0.8079
+L1 Distance: 0.0735
+---------------------------------
+Epoch: 04, Learning Rate: 0.0001
+Train Loss: 0.2182
+Test Loss: 0.2160
+Pixel Accuracy: 0.8926
+IoU: 0.8060
+L1 Distance: 0.0743
+---------------------------------
+Epochs without improvement: 1
+Epoch: 05, Learning Rate: 0.0001
+Train Loss: 0.2080
+Test Loss: 0.2054
+Pixel Accuracy: 0.8970
+IoU: 0.8146
+L1 Distance: 0.0710
+---------------------------------
+Saving checkpoint at epoch 5
+Epoch: 06, Learning Rate: 0.0001
+Train Loss: 0.2069
+Test Loss: 0.2093
+Pixel Accuracy: 0.8949
+IoU: 0.8115
+L1 Distance: 0.0721
+---------------------------------
+Epochs without improvement: 1
+Epoch: 07, Learning Rate: 0.0001
+Train Loss: 0.1905
+Test Loss: 0.2139
+Pixel Accuracy: 0.8916
+IoU: 0.8078
+L1 Distance: 0.0739
+---------------------------------
+Epochs without improvement: 2
+Epoch: 08, Learning Rate: 0.0001
+Train Loss: 0.1931
+Test Loss: 0.1962
+Pixel Accuracy: 0.9010
+IoU: 0.8221
+L1 Distance: 0.0676
+---------------------------------
+Epoch: 09, Learning Rate: 0.0001
+Train Loss: 0.1873
+Test Loss: 0.2006
+Pixel Accuracy: 0.8978
+IoU: 0.8186
+L1 Distance: 0.0695
+---------------------------------
+Epochs without improvement: 1
+Epoch: 10, Learning Rate: 0.0001
+Train Loss: 0.1856
+Test Loss: 0.2023
+Pixel Accuracy: 0.8972
+IoU: 0.8172
+L1 Distance: 0.0698
+---------------------------------
+Epochs without improvement: 2
+Saving checkpoint at epoch 10
+Epoch: 11, Learning Rate: 1e-05
+Train Loss: 0.1719
+Test Loss: 0.1802
+Pixel Accuracy: 0.9089
+IoU: 0.8354
+L1 Distance: 0.0620
+---------------------------------
+Epoch: 12, Learning Rate: 1e-05
+Train Loss: 0.1612
+Test Loss: 0.1751
+Pixel Accuracy: 0.9114
+IoU: 0.8396
+L1 Distance: 0.0603
+---------------------------------
+Epoch: 13, Learning Rate: 1e-05
+Train Loss: 0.1569
+Test Loss: 0.1741
+Pixel Accuracy: 0.9118
+IoU: 0.8405
+L1 Distance: 0.0600
+---------------------------------
+Epoch: 14, Learning Rate: 1e-05
+Train Loss: 0.1525
+Test Loss: 0.1731
+Pixel Accuracy: 0.9124
+IoU: 0.8413
+L1 Distance: 0.0596
+---------------------------------
+Epoch: 15, Learning Rate: 1e-05
+Train Loss: 0.1499
+Test Loss: 0.1742
+Pixel Accuracy: 0.9117
+IoU: 0.8404
+L1 Distance: 0.0601
+---------------------------------
+Epochs without improvement: 1
+Saving checkpoint at epoch 15
+Epoch: 16, Learning Rate: 1e-05
+Train Loss: 0.1477
+Test Loss: 0.1723
+Pixel Accuracy: 0.9127
+IoU: 0.8420
+L1 Distance: 0.0594
+---------------------------------
+Epoch: 17, Learning Rate: 1e-05
+Train Loss: 0.1451
+Test Loss: 0.1691
+Pixel Accuracy: 0.9147
+IoU: 0.8447
+L1 Distance: 0.0581
+---------------------------------
+Epoch: 18, Learning Rate: 1e-05
+Train Loss: 0.1430
+Test Loss: 0.1694
+Pixel Accuracy: 0.9144
+IoU: 0.8445
+L1 Distance: 0.0582
+---------------------------------
+Epochs without improvement: 1
+Epoch: 19, Learning Rate: 1e-05
+Train Loss: 0.1408
+Test Loss: 0.1694
+Pixel Accuracy: 0.9144
+IoU: 0.8444
+L1 Distance: 0.0582
+---------------------------------
+Epochs without improvement: 2
+Epoch: 20, Learning Rate: 1e-05
+Train Loss: 0.1387
+Test Loss: 0.1673
+Pixel Accuracy: 0.9156
+IoU: 0.8462
+L1 Distance: 0.0574
+---------------------------------
+Saving checkpoint at epoch 20
+Epoch: 21, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1360
+Test Loss: 0.1686
+Pixel Accuracy: 0.9148
+IoU: 0.8451
+L1 Distance: 0.0580
+---------------------------------
+Epochs without improvement: 1
+Epoch: 22, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1361
+Test Loss: 0.1675
+Pixel Accuracy: 0.9155
+IoU: 0.8460
+L1 Distance: 0.0575
+---------------------------------
+Epochs without improvement: 2
+Epoch: 23, Learning Rate: 1.0000000000000002e-06
+Train Loss: 0.1349
+Test Loss: 0.1687
+Pixel Accuracy: 0.9149
+IoU: 0.8450
+L1 Distance: 0.0579
+---------------------------------
+Epochs without improvement: 3
+Early stopping!
+Saving history...
+Saving metrics...
+Training complete!
