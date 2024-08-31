@@ -89,9 +89,9 @@ If necessary, update versions and dependencies.
 
 ### Notebooks
 
-- `Evaluate.py`: Used to display training and model performance.
+- `Evaluate.ipynb`: Used to display training and model performance.
 
-- `ResultsPaper.py`: Notebook containing the studies carried out and their results.
+- `ResultsPaper.ipynb`: Notebook containing the studies carried out and their results.
 
 ## Training
 
